@@ -1,0 +1,64 @@
+#================================================================================================
+
+#                                       Config of the LLMs (SF Assist)
+
+#================================================================================================
+ 
+sfassist:
+
+  api_key: ""
+
+  base_url: "https://dipcomplete.edagenaidev.awsdns.internal.das/api/cortex/v2/complete_conversation"
+
+  app_id: "edadip"
+
+  aplctn_cd: "edagnai"
+
+  app_lvl_prefix: ""
+
+  session_id: "dsa_session_12345"
+
+  model: "claude-4-sonnet"
+ 
+# ✅ UPDATED: Legacy config now matches sfassist (so code works as-is)
+
+conv_model: "claude-4-sonnet"  # ← Changed from snowflake-llama-3.3-70b
+
+programmer_model: "claude-4-sonnet"  # ← Changed from snowflake-llama-3.3-70b
+
+inspector_model: "claude-4-sonnet"  # ← Changed from snowflake-llama-3.3-70b
+
+api_key: ""  # ← Same as sfassist.api_key
+
+base_url_conv_model: "https://dipcomplete.edagenaidev.awsdns.internal.das/api/cortex/v2/complete_conversation"
+
+base_url_programmer: "https://dipcomplete.edagenaidev.awsdns.internal.das/api/cortex/v2/complete_conversation"
+
+base_url_inspector: "https://dipcomplete.edagenaidev.awsdns.internal.das/api/cortex/v2/complete_conversation"
+
+app_id: "edadip"
+
+aplctn_cd: "edagnai"
+ 
+#================================================================================================
+
+#                                       Config of the system
+
+#================================================================================================
+ 
+project_cache_path: "cache/conv_cache/"
+
+max_attempts: 5
+
+max_exe_time: 18000
+
+max_context_tokens: 7000
+
+load_chat: False
+
+chat_history_path: ""
+ 
+#knowledge integration
+
+retrieval: False
+ 
